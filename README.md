@@ -32,7 +32,7 @@ To avoid label leakage in the graph, we implemented **masked label aggregation**
 
 ## Dataset
 
-- **Source**: UCI Heart Disease Dataset (303 records)
+- **Source**: [UCI Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease) (303 records)
 - **Target**: Severity of heart disease (classes 0–4)
 - **Features**: Age, cholesterol, blood pressure, max heart rate, etc.
 - **Handling Missing Data**:
