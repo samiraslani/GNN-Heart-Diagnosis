@@ -120,3 +120,10 @@ To avoid label leakage in the graph, we implemented **masked label aggregation**
 ```bash
 git clone https://github.com/yourusername/heart-disease-gnn.git
 cd heart-disease-gnn
+```
+--- 
+## Acknowledgment
+
+
+This project was completed as the final project for the course _Intelligent Agents_, fulfilling one of the requirements of the Artificial Intelligence Certificate at the University of Toronto.
+
