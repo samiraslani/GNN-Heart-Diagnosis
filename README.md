@@ -4,15 +4,15 @@
 
 Cardiovascular disease (CVD) remains the leading cause of mortality worldwide. Early prediction and diagnosis are essential for reducing the burden of heart conditions. Traditional diagnostic tools like stress testing and manual evaluation are resource-intensive and not always accessible. This project leverages **Graph Neural Networks (GNNs)** to model the relationships between patients using clinical features, offering a novel and efficient way to predict heart disease severity.
 
-## 🧠 Objective
+## Objective
 
 To build and compare **Graph Convolutional Networks (GCN)** and **Graph Attention Networks (GAT)** for heart disease classification using the UCI Heart Disease dataset. Each patient is modeled as a node in a graph, with edges representing similarity in medical history.
 
 ---
 
-## 🧪 Methods
+## Methods
 
-### 🔹 Node and Edge Construction
+### Node and Edge Construction
 
 - **Nodes**: Represent individual patients, using clinical features (e.g., cholesterol, blood pressure).
 - **Edges**: Represent similarity between patients, constructed using:
@@ -22,7 +22,7 @@ To build and compare **Graph Convolutional Networks (GCN)** and **Graph Attentio
 
 > **Note**: Dataset features were normalized to prevent skewed similarity due to varying feature scales.
 
-### 🏷️ Label Masking
+### Label Masking
 
 To avoid label leakage in the graph, we implemented **masked label aggregation**:
 - During training, a node only accesses the labels of its **neighbors**, not its own.
@@ -30,7 +30,7 @@ To avoid label leakage in the graph, we implemented **masked label aggregation**
 
 ---
 
-## 🏥 Dataset
+## Dataset
 
 - **Source**: UCI Heart Disease Dataset (303 records)
 - **Target**: Severity of heart disease (classes 0–4)
@@ -46,7 +46,7 @@ To avoid label leakage in the graph, we implemented **masked label aggregation**
 
 ---
 
-## 🧰 Models
+## Models
 
 ### 🔸 Previous Work (Baseline)
 - Neural Network (MLP) with two hidden layers (64, 32 neurons)
@@ -86,7 +86,7 @@ To avoid label leakage in the graph, we implemented **masked label aggregation**
 
 ---
 
-## 🧠 Graph Construction Summary
+## Graph Construction Summary
 
 | Method     | Description                                                  | Performance Impact        |
 |------------|--------------------------------------------------------------|----------------------------|
@@ -96,14 +96,7 @@ To avoid label leakage in the graph, we implemented **masked label aggregation**
 
 ---
 
-## 📈 Visualization
-
-- **KNN Graphs** show clusters of patients with similar disease severity.
-- **Intermediate nodes** often bridge healthier and more severe groups.
-
----
-
-## 🔮 Future Work
+## Future Work
 
 - **Larger datasets** to improve generalizability
 - **Dynamic graph construction** based on evolving patient data
@@ -113,7 +106,7 @@ To avoid label leakage in the graph, we implemented **masked label aggregation**
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python**, **PyTorch**, **PyTorch Geometric**
 - **scikit-learn** (for preprocessing, evaluation)
@@ -121,7 +114,7 @@ To avoid label leakage in the graph, we implemented **masked label aggregation**
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 ```bash
